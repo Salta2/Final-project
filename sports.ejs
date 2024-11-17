@@ -1,0 +1,11 @@
+<%- include('layout', { body: `
+    <h1>Спортивные события</h1>
+    <ul>
+      <% data.events.forEach(event => { %>
+        <li><%= event.name %> | <%= event.date %></li>
+      <% }) %>
+    </ul>
+  ` }) %>
+  
+  
+  

@@ -1,0 +1,9 @@
+<%- include('layout', { body: `
+    <h1>Новости</h1>
+    <ul>
+      <% articles.forEach(article => { %>
+        <li><a href="<%= article.url %>"><%= article.title %></a></li>
+      <% }) %>
+    </ul>
+  ` }) %>
+  
